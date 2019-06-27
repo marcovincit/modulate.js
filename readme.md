@@ -18,7 +18,7 @@ This is the reference value. You can use dynamic values like window scroll, curs
 
 **(rangeA: [0, 250])**
 <br>
-Here you need to define the range based on the dynamic *value*, declaring the initial and final values.
+Here you need to define the range based on the dynamic **value**, declaring the initial and final values.
 
 <br>
 
