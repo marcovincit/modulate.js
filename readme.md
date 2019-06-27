@@ -8,7 +8,7 @@ modulate({value: valueToModulate,  rangeA: [0, 250], rangeB: [10, 450], limit: t
 
 ## Value
 
-**(value: valueToModulate)**
+**value: valueToModulate**
 <br>
 This is the reference value. You can use dynamic values like window scroll, cursor position, etc.
 
@@ -16,7 +16,7 @@ This is the reference value. You can use dynamic values like window scroll, curs
 
 ## Range A
 
-**(rangeA: [0, 250])**
+**rangeA: [0, 250]**
 <br>
 Here you need to define the range based on the dynamic **value**, declaring the initial and final values.
 
@@ -24,7 +24,7 @@ Here you need to define the range based on the dynamic **value**, declaring the 
 
 ## Range B
 
-**(rangeB: [10, 450])**
+**rangeB: [10, 450]**
 <br>
 Here you need to define the range that you can change based on the range B, declaring the initial and final values.
 
