@@ -1,4 +1,4 @@
-function suavex(value, rangeA, rangeB, limit) {
+function modulate(value, rangeA, rangeB, limit) {
     var fromHigh, fromLow, result, toHigh, toLow;
     if (limit == null) {
         limit = false;
