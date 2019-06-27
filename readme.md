@@ -2,13 +2,13 @@
 
 ```js
 $(window).on('scroll', function () {
-    var st = $(this).scrollTop();
-
-    var elemento = $('.elemento');
+    let st = $(this).scrollTop();
+    let elemento = $('.elemento');
+    let windowHeight = $(window).height()
 
     elemento.css({
         left: modulate(st, [0, 250], [0, 450], true),
-        opacity: modulate(st, [0, $(window).height()], [1, 0], true)
+        opacity: modulate(st, [0, windowHeight], [1, 0], true)
     });
 });
 
