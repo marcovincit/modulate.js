@@ -40,7 +40,7 @@ In this case, when the **value**  is **0** the **result** is **10**, when the **
 
 ## Limit
 
-**(limit: true)**
+**limit: true**
 <br>
 Here you can use a boolean value, if you use false, the *result* don't stop to calculate, but gonna keeping creating the sequence after then **450**.
 
