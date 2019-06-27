@@ -1,32 +1,37 @@
-# Use
+# How to use
 
 ```js
-$(window).on('scroll', function () {
-    let st = $(this).scrollTop();
-    let elemento = $('.elemento');
-    let windowHeight = $(window).height()
 
-    elemento.css({
-        left: modulate(st, [0, 250], [0, 450], true),
-        opacity: modulate(st, [0, windowHeight], [1, 0], true)
-    });
-});
+modulate({value: valueToModulate,  rangeA: [0, 250], rangeB: [10, 450], limit: true})
 
 ```
 
-## Dicas
+## Value
 
-*(st)*
-O valor de referencia. Nesse caso o scrollTop da janela que vai mudando enquanto vc scrolla.
-___
+*(value: valueToModulate)*
+This is the reference value. You can use dynamic values like window scroll, cursor position, etc.
 
-*([0, 250])*
-Aqui ele pega o valor de referencia e diz que de 0 a 250 (do scroll nesse caso) vai modular o próximo grupo de números, que é
-___
 
-*([0, 450])*
-Aqui é o valor que vc quer mudar no elemento. No nosso exemplo, o left vai sair de 0 pra 450px quando o scroll passar de 0 para 250px.
-___
+## Range A
 
-*(true)*
-Ele limita até 450px, se deixar nulo ou falso, ele ultrapassa os 450px, criando um parallax.
+*(rangeA: [0, 250])*
+Here you need to define the range based on the dynamic *value*, declaring the initial and final values.
+
+
+## Range B
+
+*(rangeB: [10, 450])*
+Here you need to define the range that you can change based on the range B, declaring the initial and final values.
+
+
+## Explaining
+
+In this case, when the *value* is 0 the *result* is 10, when the *value* is 250 the *result* is 450.
+
+
+## Limit
+
+*(limit: true)*
+Here you can use a boolean value, if you use false, the *result* don't stop to calculate, but gonna keeping creating the sequence after then 450.
+
+You can or not define the limit, the default value is true.
