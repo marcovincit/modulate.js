@@ -20,8 +20,7 @@ This is the reference value. You can use dynamic values like window scroll, curs
 <br>
 Here you need to define the range based on the dynamic *value*, declaring the initial and final values.
 
-
-
+<br>
 
 ## Range B
 
