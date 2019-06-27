@@ -7,8 +7,8 @@ $(window).on('scroll', function () {
     var elemento = $('.elemento');
 
     elemento.css({
-        left: suavex(st, [0, 250], [0, 450], true),
-        opacity: suavex(st, [0, $(window).height()], [1, 0], true)
+        left: modulate(st, [0, 250], [0, 450], true),
+        opacity: modulate(st, [0, $(window).height()], [1, 0], true)
     });
 });
 
