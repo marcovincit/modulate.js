@@ -1,4 +1,4 @@
-# How to use Modulate.js
+# How to use modulate.js
 
 ```js
 modulate({value: valueToModulate,  rangeA: [0, 250], rangeB: [10, 450], limit: true})
