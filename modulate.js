@@ -1,8 +1,8 @@
-function modulate({value, rangeA, rangeB, limit = true}) {
-    const rangeAInicial = rangeA[0],
-          rangeAFinal = rangeA[1],
-          rangeBInicial = rangeB[0],
-          rangeBFinal = rangeB[1],
-          result = rangeBInicial + (((value - rangeAInicial) / (rangeAFinal - rangeAInicial)) * (rangeBFinal - rangeBInicial))
-    return limit === true && result > rangeBFinal ? rangeBFinal : result
+function modulate(input, inputRange, outputRange, limit = true) {
+  const inputRangeInicial = inputRange[0],
+        inputRangeFinal = inputRange[1],
+        outputRangeInicial = outputRange[0],
+        outputRangeFinal = outputRange[1],
+        result = outputRangeInicial + (((input - inputRangeInicial) / (inputRangeFinal - inputRangeInicial)) * (outputRangeFinal - outputRangeInicial))
+  return limit === true && result > outputRangeFinal ? outputRangeFinal : result
 }
