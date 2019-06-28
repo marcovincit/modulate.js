@@ -1,8 +1,8 @@
-function modulate(input, inputRange, outputRange, limit = true) {
-  const inputRangeInitial = inputRange[0],
-        inputRangeFinal = inputRange[1],
-        outputRangeInitial = outputRange[0],
-        outputRangeFinal = outputRange[1],
-        result = outputRangeInitial + (((input - inputRangeInitial) / (inputRangeFinal - inputRangeInitial)) * (outputRangeFinal - outputRangeInitial))
-  return limit === true && result > outputRangeFinal ? outputRangeFinal : result
+function modulate(input, [inputRangeInitial, inputRangeFinal], [outputRangeInitial, outputRangeFinal], limit) {
+    let result = (input - inputRangeInitial) / (inputRangeFinal - inputRangeInitial) * (outputRangeFinal - outputRangeInitial) + outputRangeInitial
+    if (!limit) return result
+    return outputRangeInitial < outputRangeFinal ? constrain(result, outputRangeInitial, outputRangeFinal) : constrain(result, outputRangeFinal, outputRangeInitial)
+}
+function constrain(result, low, high) {
+    return Math.max(Math.min(result, high), low)
 }
