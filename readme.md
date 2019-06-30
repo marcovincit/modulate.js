@@ -1,14 +1,14 @@
 # How to use modulate.js
 
 ```js
-modulate(valueToModulate,[0, 250], [10, 450], true)
+modulate(input,[0, 250], [10, 450], true)
 ```
 
 <br>
 
 ## Input Vvalue
 
-**valueToModulate**
+**input**
 <br>
 This is the reference value. You can use dynamic values like window scroll, cursor position, etc.
 
