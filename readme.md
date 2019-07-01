@@ -1,7 +1,7 @@
 # How to use modulate.js
 
 ```js
-modulate(input,[0, 250], [10, 450], true)
+modulate(input, [0, 250], [10, 450], true)
 ```
 
 <br>
@@ -45,3 +45,8 @@ In this case, when the **value**  is **0** the **result** is **10**, when the **
 Here you can use a boolean value, if you use false, the *result* don't stop to calculate, but gonna keeping creating the sequence after then **450**.
 
 You can or not define the limit, the default value is true.
+
+
+##Reference links
+
+https://medium.com/the-school-of-do/framer-cheat-sheets-utils-modulate-b88e359fdcc6
