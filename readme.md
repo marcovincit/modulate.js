@@ -6,7 +6,7 @@ modulate(input, [0, 250], [10, 450], true)
 
 <br>
 
-## Input Vvalue
+## Input Value
 
 **input**
 <br>
@@ -14,7 +14,7 @@ This is the reference value. You can use dynamic values like window scroll, curs
 
 <br>
 
-## inputRange
+## Input Range
 
 **[0, 250]**
 <br>
@@ -22,7 +22,7 @@ Here you need to define the range based on the dynamic **value**, declaring the 
 
 <br>
 
-## outputRange
+## Output Range
 
 **[10, 450]**
 <br>
@@ -47,6 +47,6 @@ Here you can use a boolean value, if you use false, the *result* don't stop to c
 You can or not define the limit, the default value is true.
 
 
-##Reference links
+## Reference link
 
 https://medium.com/the-school-of-do/framer-cheat-sheets-utils-modulate-b88e359fdcc6
