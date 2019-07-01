@@ -46,6 +46,7 @@ Here you can use a boolean value, if you use false, the *result* don't stop to c
 
 You can or not define the limit, the default value is true.
 
+<br>
 
 ## Reference link
 
