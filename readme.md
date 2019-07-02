@@ -1,4 +1,4 @@
-# 🌈 Modulate.js
+# Modulate.js 🌈
 
 Use modulate.js to take any range of values and transform it into any other, in order to create animations based on events.
 
