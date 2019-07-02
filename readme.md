@@ -73,6 +73,7 @@ slider.oninput = () => {
 ## Contributors
 
 [@giovanayahiro](https://github.com/giovanayahiro) 👩🏻‍💻
+
 [@koz](https://github.com/koz) 👨🏾‍💻
 
 [@marcioshiz](https://github.com/marcioshiz) 👨🏾‍💻
