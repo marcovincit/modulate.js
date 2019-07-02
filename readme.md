@@ -1,53 +1,60 @@
-# How to use modulate.js
+# Modulate.js
 
-```js
-modulate(input, [0, 250], [10, 450], true)
-```
+Use modulate.js to take any range of values and transform it into any other, in order to create animations based on events.
 
-<br>
+## Syntax
 
-## Input Value
+    modulate(input, [inicial, final], [inicial, final], true)
 
-**input**
-<br>
-This is the reference value. You can use dynamic values like window scroll, cursor position, etc.
+## Parameters
 
-<br>
+**1.** **Input Value**
 
-## Input Range
+This is the reference value. Replace the variable *input* to a dynamic value, such as *window scroll*, input range, *cursor position*, etc.
 
-**[0, 250]**
-<br>
-Here you need to define the range based on the dynamic **value**, declaring the initial and final values.
+    input
 
-<br>
+**2. Input Range**
 
-## Output Range
+Set the initial and the final values on the first array. This values ranges are based on the input value in which the user will interact with.
 
-**[10, 450]**
-<br>
-Here you need to define the range that you can change based on the range B, declaring the initial and final values.
+    [inicial, final]
 
+**3. Output Range**
 
-<br>
+Set the initial and final values to generate your modulated result.
 
-## Explaining
+    [inicial, final]
 
-In this case, when the **value**  is **0** the **result** is **10**, when the **value** is **250** the **result** is **450**.
+**4. Limit**
 
+Define if the modulate will or not occur. Set to *true* or *false*. The default value is *true*.
 
-<br>
+    true
 
-## Limit
+## Examples
 
-**true**
-<br>
-Here you can use a boolean value, if you use false, the *result* don't stop to calculate, but gonna keeping creating the sequence after then **450**.
+    const slider = document.getElementById("slider")
+    const circle = document.getElementById("circle")
+    
+    slider.oninput = () => {
+    	circle.style.borderRadius = `${modulate(slider.value, [0, 100], [0, 50], true)}`
+    }
 
-You can or not define the limit, the default value is true.
+## Reference links
 
-<br>
+[https://medium.com/the-school-of-do/framer-cheat-sheets-utils-modulate-b88e359fdcc6](https://medium.com/the-school-of-do/framer-cheat-sheets-utils-modulate-b88e359fdcc6)
 
-## Reference link
+[https://github.com/processing/p5.js/blob/master/src/math/calculation.js](https://github.com/processing/p5.js/blob/master/src/math/calculation.js)
 
-https://medium.com/the-school-of-do/framer-cheat-sheets-utils-modulate-b88e359fdcc6
+## Contributors
+
+@giovanayahiro 👩🏻‍💻
+[https://github.com/giovanayahiro](https://github.com/giovanayahiro)
+
+@koz 👨🏾‍💻
+[https://github.com/koz](https://github.com/koz)
+
+@marcioshiz
+
+[https://github.com/marcioshiz](https://github.com/marcioshiz)
