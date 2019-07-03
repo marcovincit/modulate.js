@@ -7,7 +7,7 @@ Use modulate.js to take any range of values and transform it into any other, in 
 ## Syntax
 
 ```js
-modulate(input, [inicial, final], [inicial, final], true)
+modulate(input, [initial, final], [initial, final], true)
 ```
 <br>
 
@@ -26,7 +26,7 @@ input
 Set the initial and the final values on the first array. This values ranges are based on the input value in which the user will interact with.
 
 ```js
-[inicial, final]
+[initial, final]
 ```
 
 **3. Output Range**
@@ -34,7 +34,7 @@ Set the initial and the final values on the first array. This values ranges are 
 Set the initial and final values to generate your modulated result.
 
 ```js
-[inicial, final]
+[initial, final]
 ```
 
 **4. Limit**
