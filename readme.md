@@ -58,7 +58,7 @@ slider.oninput = () => {
 }
 ```
 
-[Show example](https://s.codepen.io/marcovincit/debug/EBEdWE/LQAExKzKnYdr)
+[Show example](https://codepen.io/marcovincit/full/EBEdWE)
 
 <br>
 
