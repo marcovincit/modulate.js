@@ -54,7 +54,7 @@ const slider = document.getElementById("slider")
 const circle = document.getElementById("circle")
 
 slider.oninput = () => {
-    circle.style.borderRadius = `${modulate(slider.value, [0, 100], [0, 50], true)}`
+    circle.style.borderRadius = `${modulate(slider.value, [0, 100], [0, 50], true)}%`
 }
 ```
 
